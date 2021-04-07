@@ -136,7 +136,7 @@ public class Main {
         float metersPerSeconds = meters / time;
         float kilometersPerHours = (meters / 1000) / (time / 3600);
         float mphPerHours = (meters / 1609) / (time / 3600);
-        System.out.println("The solution for ex.9 = ");
+        System.out.println("The solution for ex.9: ");
         System.out.println("Speed (m/s) = " + metersPerSeconds);
         System.out.println("Speed (km/h) = " + kilometersPerHours);
         System.out.println("Speed (mph/h) = " + mphPerHours);
