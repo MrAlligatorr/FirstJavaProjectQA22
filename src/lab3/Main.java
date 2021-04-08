@@ -31,9 +31,10 @@ public class Main {
         System.out.println("The solution for ex.5 = " + op.ex5("FastTrackIT ", 2));
         System.out.println("The solution for ex.6 = " + op.snow(1));
         System.out.println("The solution for ex.7 = " + op.ex7(5));
-        System.out.println("The solution for ex.8 = " + op.ex8(5));
-        System.out.println("The solution for ex.9 = " + op.isNumberEven(24));
-        System.out.println("The solution for ex.10 = " + op.isEligibleToVote(19));
+        System.out.println("The solution for ex.8 = " + op.ex8(1));
+        System.out.println("The solution for ex.9 = " + op.isNumberEven(true, 5));
+        System.out.println("The solution for ex.10 = " + op.isEligibleToVote(true, 19));
         System.out.println("The solution for ex.11 = " + op.ex11(2, 9, 5));
+
     }
 }

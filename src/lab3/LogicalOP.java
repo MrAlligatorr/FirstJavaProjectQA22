@@ -53,29 +53,53 @@ public class LogicalOP {
     public String ex8(int nr) {
         switch (nr) {
             case 1:
-                System.out.println("The number is: " + nr + " !");
+                System.out.println("The number is: " + 1 + " !");
+                break;
+            case 2:
+                System.out.println("O número é: " + 2 + " !");
+                break;
+            case 3:
+                System.out.println("Номер такой: " + 3 + " !");
+                break;
+            case 4:
+                System.out.println("Il numero è: " + 4 + " !");
+                break;
+            case 5:
+                System.out.println("El numero es: " + 5 + " !");
+                break;
+            case 6:
+                System.out.println("Est Numerus: " + 6 + " !");
+                break;
+            case 7:
+                System.out.println("Дугаар нь: " + 7 + " !");
+                break;
+            case 8:
+                System.out.println("Ο αριθμός είναι: " + 8 + " !");
+                break;
+            case 9:
+                System.out.println("Le nombre est: " + 9 + " !");
+                break;
+            case 10:
+                System.out.println("号码是： " + 10 + " !");
                 break;
             default:
                 System.out.println("The number is: " + nr + " !");
-                break;
-        }
-        return "The number is: " + nr + " !";
+        }return "??";
+
     }
 
     //Ex 9
-    public String isNumberEven(int nr1) {
+    public boolean isNumberEven(boolean evenOrOdd,int nr1) {
         if (nr1 % 2 == 0) {
-            return "True";
-        }
-        return "False";
+            return evenOrOdd = true;
+        }return evenOrOdd = !evenOrOdd;
     }
 
     //Ex 10
-    public String isEligibleToVote(int age) {
+    public boolean isEligibleToVote(boolean eligibleToVote, int age) {
         if (age > 18) {
-            return "True";
-        }
-        return "False";
+            return eligibleToVote = true;
+        }return eligibleToVote = !eligibleToVote;
     }
 
     //Ex 11
