@@ -50,7 +50,7 @@ public class LogicalOP {
     }
 
     //Ex 8
-    public String ex8(int nr) {
+    public void switchCase (int nr) {
         switch (nr) {
             case 1:
                 System.out.println("The number is: " + 1 + " !");
@@ -84,8 +84,7 @@ public class LogicalOP {
                 break;
             default:
                 System.out.println("The number is: " + nr + " !");
-        }return "??";
-
+        }
     }
 
     //Ex 9
@@ -96,10 +95,10 @@ public class LogicalOP {
     }
 
     //Ex 10
-    public boolean isEligibleToVote(boolean eligibleToVote, int age) {
+    public boolean isEligibleToVote(int age) {
         if (age > 18) {
-            return eligibleToVote = true;
-        }return eligibleToVote = !eligibleToVote;
+            return true;
+        }return false;
     }
 
     //Ex 11
