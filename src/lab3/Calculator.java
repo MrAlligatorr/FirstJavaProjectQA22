@@ -34,7 +34,7 @@ public class Calculator {
 
     //Ex 1.4.d
     public int ex14d(int a, int b, int c, int d, int e, int f) {
-      return a + b / c * d - e % f;
+        return a + b / c * d - e % f;
     }
 
     //Ex 2

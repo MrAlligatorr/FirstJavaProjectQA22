@@ -50,7 +50,7 @@ public class LogicalOP {
     }
 
     //Ex 8
-    public void switchCase (int nr) {
+    public void switchCase(int nr) {
         switch (nr) {
             case 1:
                 System.out.println("The number is: " + 1 + " !");
@@ -88,17 +88,19 @@ public class LogicalOP {
     }
 
     //Ex 9
-    public boolean isNumberEven(boolean evenOrOdd,int nr1) {
+    public boolean isNumberEven(int nr1) {
         if (nr1 % 2 == 0) {
-            return evenOrOdd = true;
-        }return evenOrOdd = !evenOrOdd;
+            return true;
+        }
+        return false;
     }
 
     //Ex 10
     public boolean isEligibleToVote(int age) {
         if (age > 18) {
             return true;
-        }return false;
+        }
+        return false;
     }
 
     //Ex 11
