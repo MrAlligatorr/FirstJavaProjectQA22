@@ -1,4 +1,4 @@
-package AnimalRescue;
+package animalRescue.Food;
 
 public class Food {
 
@@ -6,7 +6,16 @@ public class Food {
     private float priceIn$;
     private int quantity;
     private int inStock;
+    private int recepies;
 
+
+    public int getRecepies() {
+        return recepies;
+    }
+
+    public void setRecepies(int recepies) {
+        this.recepies = recepies;
+    }
 
     public String getName() {
         return name;

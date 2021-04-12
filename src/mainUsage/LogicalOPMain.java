@@ -1,8 +1,6 @@
-package lab3;
+package mainUsage;
 
-public class LogicalOP {
-
-    //Ex 3
+public class LogicalOPMain {
     public int checkBiggerNumber(int first, int second) {
         if (first > second) {
             return first;
@@ -11,7 +9,6 @@ public class LogicalOP {
         }
     }
 
-    //Ex 4
     public String learnTextComparison(String text) {
         if (text.equals("FastTrackIT")) {
             return "Learning text comparison";
@@ -19,7 +16,6 @@ public class LogicalOP {
         return "Got to try some more";
     }
 
-    //Ex 5
     public String ex5(String text, int nr) {
         if (text.equals("FastTrackIT ") && nr <= 3) {
             return text + nr;
@@ -29,7 +25,6 @@ public class LogicalOP {
         return "";
     }
 
-    //Ex 6
     public String snow(int cmOfSnow) {
         if (cmOfSnow > 8 || cmOfSnow == 6) {
             return "The amount of snow this winter was(cm): " + cmOfSnow;
@@ -37,7 +32,6 @@ public class LogicalOP {
         return "The forecast snow is(cm):" + cmOfSnow;
     }
 
-    //Ex 7
     public String ex7(float nr1) {
         if (nr1 >= 3 && nr1 != 4) {
             return "The number is greater than 3 and not equal to 4";
@@ -49,7 +43,6 @@ public class LogicalOP {
         return "The number can't be equal to 3";
     }
 
-    //Ex 8
     public void switchCase(int nr) {
         switch (nr) {
             case 1:
@@ -87,7 +80,6 @@ public class LogicalOP {
         }
     }
 
-    //Ex 9
     public boolean isNumberEven(int nr1) {
         if (nr1 % 2 == 0) {
             return true;
@@ -95,7 +87,6 @@ public class LogicalOP {
         return false;
     }
 
-    //Ex 10
     public boolean isEligibleToVote(int age) {
         if (age > 18) {
             return true;
@@ -103,7 +94,6 @@ public class LogicalOP {
         return false;
     }
 
-    //Ex 11
     public int higherNumberWith3Numbers(int nr1, int nr2, int nr3) {
         if (nr1 > nr2 && nr1 > nr3) {
             return nr1;

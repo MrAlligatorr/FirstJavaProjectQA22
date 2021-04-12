@@ -8,7 +8,7 @@ public class Calculator {
     }
 
     // Ex 1.2
-    public float sum1(float first, float second) {
+    public int sum1(int first, int second) {
         return first + second;
     }
 
@@ -64,7 +64,7 @@ public class Calculator {
     }
 
     //Ex 4
-    public float averageNumber(float first, float second, float third) {
+    public float averageNumberWith3(float first, float second, float third) {
         return (first + second + third) / 3;
     }
 
@@ -103,5 +103,9 @@ public class Calculator {
         System.out.println("Speed (m/s) = " + metersPerSeconds);
         System.out.println("Speed (km/h) = " + kilometersPerHours);
         System.out.println("Speed (mph/h) = " + mphPerHours);
+    }
+
+    public float averageNumberWith2 (int nr1, int nr2){
+        return (nr1+nr2)/2;
     }
 }

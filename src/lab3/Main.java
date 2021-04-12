@@ -18,7 +18,7 @@ public class Main {
         System.out.println("The solution for ex.1.2 (*) = " + calculate.multiply2(2, 3));
         System.out.println("The solution for ex.1.2 (/) = " + calculate.divide2(6, 2));
         calculate.printProgramName("The solution for ex.1.3:");
-        System.out.println("The solution for ex.1.4 = " + calculate.averageNumber(3, 2, 4));
+        System.out.println("The solution for ex.1.4 = " + calculate.averageNumberWith3(3, 2, 4));
         calculate.printFace("The solution for ex.1.5:");
         System.out.println("The solution for ex.1.6 = " + calculate.decimalPoint(5, 2));
         System.out.println("The solution for ex.1.7 = " + calculate.convertCToF(20));
@@ -35,6 +35,6 @@ public class Main {
         op.switchCase(3);
         System.out.println("The solution for ex.9 = " + op.isNumberEven(5));
         System.out.println("The solution for ex.10 = " + op.isEligibleToVote(19));
-
+        System.out.println("The solution for ex.11 =  "+ op.higherNumberWith3Numbers(23,55,22));
     }
 }

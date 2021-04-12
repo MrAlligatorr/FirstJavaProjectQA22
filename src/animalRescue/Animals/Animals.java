@@ -1,4 +1,4 @@
-package AnimalRescue;
+package animalRescue.Animals;
 
 public class Animals {
 
@@ -9,7 +9,16 @@ public class Animals {
     private int happiness;
     private String favoriteFood;
     private String favoriteFunActivity;
+    private int animalCode;
 
+
+    public int getAnimalCode() {
+        return animalCode;
+    }
+
+    public void setAnimalCode(int animalCode) {
+        this.animalCode = animalCode;
+    }
 
     public String getName() {
         return name;
