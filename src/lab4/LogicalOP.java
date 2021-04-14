@@ -1,7 +1,5 @@
 package lab4;
 
-import mainUsage.LogicalOPMain;
-
 public class LogicalOP {
     //ex 1 for
     public void countTo100(int number) {
@@ -35,7 +33,7 @@ public class LogicalOP {
 
     //Ex 4 for
     public void countBetweenIntervalSmallToBig(int number1, int number2) {
-        LogicalOPMain op = new LogicalOPMain();
+        lab3.LogicalOP op = new lab3.LogicalOP();
         int smaller = checkSmallerNumber(number1, number2);
         int bigger = op.checkBiggerNumber(number1, number2);
         for (int i = smaller; i <= bigger; i++) {
@@ -52,7 +50,7 @@ public class LogicalOP {
 
     //Ex 5 for
     public void countEvenNumbers(int nr1, int nr2) {
-        LogicalOPMain op = new LogicalOPMain();
+        lab3.LogicalOP op = new lab3.LogicalOP();
         int smaller = checkSmallerNumber(nr1, nr2);
         int bigger = op.checkBiggerNumber(nr1, nr2);
         for (int i = smaller; i <= bigger; i++) {
@@ -69,7 +67,7 @@ public class LogicalOP {
 
     //Ex 6 for
     public void countOddNumbers(int nr1, int nr2) {
-        LogicalOPMain op = new LogicalOPMain();
+        lab3.LogicalOP op = new lab3.LogicalOP();
         int smaller = checkSmallerNumber(nr1, nr2);
         int bigger = op.checkBiggerNumber(nr1, nr2);
         for (int i = smaller; i <= bigger; i++) {
@@ -153,7 +151,7 @@ public class LogicalOP {
 
     //Ex 4 while
     public void countBetweenIntervalSmallToBigWhile(int number1, int number2) {
-        LogicalOPMain op = new LogicalOPMain();
+        lab3.LogicalOP op = new lab3.LogicalOP();
         int smaller = checkSmallerNumber(number1, number2);
         int bigger = op.checkBiggerNumber(number1, number2);
         if (smaller <= bigger) {
@@ -170,7 +168,7 @@ public class LogicalOP {
 
     //Ex 5 while
     public void countEvenNumbersWhile(int nr1, int nr2) {
-        LogicalOPMain op = new LogicalOPMain();
+        lab3.LogicalOP op = new lab3.LogicalOP();
         int smaller = checkSmallerNumber(nr1, nr2);
         int bigger = op.checkBiggerNumber(nr1, nr2);
         do {
@@ -181,7 +179,7 @@ public class LogicalOP {
 
     //Ex 6 while
     public void countOddNumbersWhile(int nr1, int nr2) {
-        LogicalOPMain op = new LogicalOPMain();
+        lab3.LogicalOP op = new lab3.LogicalOP();
         int smaller = checkSmallerNumber(nr1, nr2);
         int bigger = op.checkBiggerNumber(nr1, nr2);
         do {

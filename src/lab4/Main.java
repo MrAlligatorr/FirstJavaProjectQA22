@@ -37,6 +37,6 @@ public class Main {
 //        System.out.println("The solution for ex.2.8: " + op.ex8(1, 15));
 //        System.out.println("The solution for ex.2.9: ");
 //        op.fibonacci();
-        op.wozaCozaLoza();
+//        op.wozaCozaLoza();
     }
 }
