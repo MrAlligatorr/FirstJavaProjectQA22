@@ -36,11 +36,44 @@ public class LogicalOP {
     }
 
     //Ex 4
-//    public int[] ex4(int[] array) {
-//        int i=0;
-//            array[i] = i + 1;
-//        }
-//    }
+    public float average(int[] array) {
+        int sum = 0;
+        float md = 0;
+        for (int i = 0; i < 100; i++) {
+            array[i] = i + 1;
+            sum = sum + array[i];
+        }
+        md = sum / (float) array.length;
+        return md;
+    }
+
+    //Ex 5
+    public Boolean trueOrFalse(String[] array, String text) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == text) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    //Ex6
+    public int position(int[] rtn, int nr) {
+        rtn[0] = 36;
+        rtn[1] = 23;
+        rtn[2] = 73;
+        rtn[3] = 35;
+        rtn[4] = 55;
+        rtn[5] = 76;
+        rtn[6] = 86;
+        int loop = 0;
+        for (int i = 0; i < 7; i++) {
+            if (rtn[i] == nr) {
+                loop = i;
+            }
+        }
+        return loop;
+    }
 
     //Ex 7
     public void ex7(String[] array) {
@@ -57,6 +90,27 @@ public class LogicalOP {
         array[9] = "- - - - - - - - - - ";
         for (int i = 0; i < 10; i++) {
             System.out.println(array[i]);
+        }
+    }
+
+    //Ex 8
+    public void verify(int[] array, int nr) {
+        array[0] = 43;
+        array[1] = 98;
+        array[2] = 2;
+        array[3] = 6;
+        array[4] = 25;
+        int loop = 0;
+        for (int i = 0; i < 5; i++) {
+            if (array[i] == nr) {
+                loop = i;
+            }
+        }
+        for (int j = 0; j < 5; j++) {
+            if (j == loop) {
+                j++;
+            }
+            System.out.println(array[j]);
         }
     }
 }

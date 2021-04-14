@@ -3,6 +3,7 @@ package lab5;
 public class Main {
     public static void main(String[] args) {
         Calculator cal = new Calculator();
+        LogicalOP op = new LogicalOP();
 
         //Ex 1
 //        cal.printName("Razvan");
@@ -56,20 +57,39 @@ public class Main {
 //        cal.speed(8589234, 3, 24, 36);
 
         //Ex2
-        LogicalOP op = new LogicalOP();
-
-//        //Ex 2
 //        int max= 100;
 //        int[] arrayEx1 = new int[max];
 //        op.countToMax(arrayEx1, max);
 
         //Ex 3
-        int[] array = new int[50];
-        System.out.println(op.evenNumbers(array));
-        op.printArray(array);
+//        int[] array = new int[50];
+//        System.out.println(op.evenNumbers(array));
+//        op.printArray(array);
+
+        //Ex 4
+//        int[] array = new int[100];
+//        System.out.println(op.average(array));
+
+        //Ex 5
+//        String[] array = new String[5];
+//        array[0] = "Cat";
+//        array[1] = "Dog";
+//        array[2] = "Lizard";
+//        array[3] = "Alligator";
+//        array[4] = "T-Rex";
+//        System.out.println(op.trueOrFalse(array, " name"));
+
+        //Ex6
+//        int[] array6 = new int[7];
+//        System.out.println(op.position(array6, 76));
 
         //Ex 7
 //        String[] array = new String[10];
 //        op.ex7(array);
+
+        //Ex 8
+//        int[]array = new int [5];
+//        op.verify(array,5);
+
     }
 }
