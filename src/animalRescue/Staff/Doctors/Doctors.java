@@ -13,4 +13,8 @@ public class Doctors extends Staff {
     public void setSpecialization(String specialization) {
         this.specialization = specialization;
     }
+
+    public void coffee(){
+        System.out.println("Can't live without coffee");
+    }
 }

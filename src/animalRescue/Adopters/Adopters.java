@@ -8,6 +8,16 @@ public class Adopters {
     private float purchaseAnimalDate;
     private float totalMoneyPurchasesIn$;
     private int age;
+    private String responsibleForTheAnimal;
+
+
+    public String getResponsibleForTheAnimal() {
+        return responsibleForTheAnimal;
+    }
+
+    public void setResponsibleForTheAnimal(String responsibleForTheAnimal) {
+        this.responsibleForTheAnimal = responsibleForTheAnimal;
+    }
 
     public int getHasAnimalCode() {
         return hasAnimalCode;
@@ -53,7 +63,7 @@ public class Adopters {
         return moneyIn$;
     }
 
-    public void setMoneyIn$(float i) {
+    public void setMoneyIn$(float moneyIn$) {
         this.moneyIn$ = moneyIn$;
     }
 }

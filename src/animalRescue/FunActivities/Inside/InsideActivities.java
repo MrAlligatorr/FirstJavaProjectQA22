@@ -4,6 +4,11 @@ import animalRescue.FunActivities.FunActivities;
 
 public class InsideActivities extends FunActivities {
 
-    public void sleeping(){
-        System.out.println("ZzZzZz...");}
+    public void sleeping() {
+        System.out.println("ZzZzZz...");
+    }
+
+    public void weather(){
+        System.out.println("Rainy");
+    }
 }

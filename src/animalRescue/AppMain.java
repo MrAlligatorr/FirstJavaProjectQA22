@@ -1,6 +1,7 @@
 package animalRescue;
 
 import animalRescue.Adopters.Adopters;
+import animalRescue.Adopters.UnderAge;
 import animalRescue.Animals.Animals;
 import animalRescue.Animals.Cats.Species.MainCoon;
 import animalRescue.Animals.Cats.Species.Siamese;
@@ -8,6 +9,7 @@ import animalRescue.Animals.Dogs.Species.Bulldog;
 import animalRescue.Animals.Dogs.Species.GoldenRetriever;
 import animalRescue.Food.Food;
 import animalRescue.Food.Meat.Meat;
+import animalRescue.Food.Vegetables.Vegetables;
 import animalRescue.FunActivities.Inside.InsideActivities;
 import animalRescue.FunActivities.Outside.OutsideActivities;
 import animalRescue.Staff.CleaningStaff.CleaningStaff;
@@ -100,9 +102,12 @@ public class AppMain {
 //        System.out.println(dog.getFavoriteFunActivity());
 //
 //        //Adopters
-//        Adopters adopter = new Adopters();
-//        adopter.setName("Alex");
-//        System.out.println(adopter.getName());
+        Adopters adopter = new Adopters();
+        adopter.setName("Alex McHarold");
+        System.out.println(adopter.getName());
+
+        adopter.setResponsibleForTheAnimal("Dona McHarold (wife)");
+        System.out.println(adopter.getResponsibleForTheAnimal());
 //
 //        adopter.setMoneyIn$(300);
 //        System.out.println(adopter.getMoneyIn$());
@@ -119,10 +124,15 @@ public class AppMain {
 //        adopter.setAge(24);
 //        System.out.println(adopter.getAge());
 //
+        UnderAge minor = new UnderAge();
+        minor.responsibleForTheAnimal();
+
 //        //Food
-//        Meat meat = new Meat();
-//        meat.setRecepies(23);
-//        System.out.println(meat.getRecepies());
+        Meat meat = new Meat();
+        meat.smell();
+
+//        meat.setRecipes(23);
+//        System.out.println(meat.getRecipes());
 //
 //        meat.setName("Hotdogs");
 //        System.out.println(meat.getName());
@@ -135,16 +145,25 @@ public class AppMain {
 //
 //        meat.setInStock(200);
 //        System.out.println(meat.getInStock());
+
+        Vegetables veggies = new Vegetables();
+        veggies.smell();
 //
 //        //Activities
-//        InsideActivities ins = new InsideActivities();
+        InsideActivities ins = new InsideActivities();
 //        ins.sleeping();
+
+        ins.weather();
 //
-//        OutsideActivities out = new OutsideActivities();
+        OutsideActivities out = new OutsideActivities();
 //        out.fetch();
+
+        out.weather();
 //
 //        //Staff
-//        Doctors doc = new Doctors();
+        Doctors doc = new Doctors();
+        doc.coffee();
+
 //        doc.setSpecialization("Nutrition");
 //        System.out.println(doc.getSpecialization());
 //
@@ -163,7 +182,9 @@ public class AppMain {
 //        doc.setDaysOff(4);
 //        System.out.println(doc.getDaysOff());
 //
-//        CleaningStaff cs = new CleaningStaff();
+        CleaningStaff cs = new CleaningStaff();
+        cs.coffee();
+
 //        cs.setAge(24);
 //        System.out.println(cs.getAge());
 //
@@ -179,7 +200,9 @@ public class AppMain {
 //        cs.setDaysOff(0);
 //        System.out.println(cs.getDaysOff());
 //
-//        Nurses nurse = new Nurses();
+        Nurses nurse = new Nurses();
+        nurse.coffee();
+
 //        nurse.setAge(20);
 //        System.out.println(nurse.getAge());
 //

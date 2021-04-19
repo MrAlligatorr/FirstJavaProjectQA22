@@ -46,5 +46,9 @@ public class Staff {
     public void setDaysOff(int daysOff) {
         this.daysOff = daysOff;
     }
+
+    public void coffee (){
+        System.out.println("Doesn't like coffee");
+    }
 }
 

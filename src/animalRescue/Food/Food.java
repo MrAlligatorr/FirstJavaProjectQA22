@@ -6,15 +6,15 @@ public class Food {
     private float priceIn$;
     private int quantity;
     private int inStock;
-    private int recepies;
+    private int recipes;
 
 
-    public int getRecepies() {
-        return recepies;
+    public int getRecipes() {
+        return recipes;
     }
 
-    public void setRecepies(int recepies) {
-        this.recepies = recepies;
+    public void setRecipes(int recipes) {
+        this.recipes = recipes;
     }
 
     public String getName() {
@@ -47,5 +47,9 @@ public class Food {
 
     public void setInStock(int inStock) {
         this.inStock = inStock;
+    }
+
+    public void smell(){
+        System.out.println("Smells fresh");
     }
 }
