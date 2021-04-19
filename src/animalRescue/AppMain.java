@@ -20,11 +20,19 @@ public class AppMain {
         Siamese sia = new Siamese();
         sia.purr();
 
+        sia.sleep();
+
+        sia.plays();
+
         MainCoon mc = new MainCoon();
 //        mc.setHasFur(true);
 //        System.out.println(mc.isHasFur());
 
+        mc.plays();
+
         mc.purr();
+
+        mc.sleep();
 
 //        mc.setAge(2);
 //        System.out.println(mc.getAge());
@@ -53,6 +61,10 @@ public class AppMain {
         GoldenRetriever gldn = new GoldenRetriever();
         gldn.barks();
 
+        gldn.plays();
+
+        gldn.sleep();
+
         Bulldog dog = new Bulldog();
 //        dog.setAge(4);
 //        System.out.println(dog.getAge());
@@ -65,6 +77,10 @@ public class AppMain {
 //
         dog.barks();
 //
+        dog.plays();
+
+        dog.sleep();
+
 //        dog.setName("Rex");
 //        System.out.println(dog.getName());
 //

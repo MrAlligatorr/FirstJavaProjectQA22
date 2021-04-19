@@ -75,4 +75,12 @@ public class Animals {
     public void setFavoriteFunActivity(String favoriteFunActivity) {
         this.favoriteFunActivity = favoriteFunActivity;
     }
+
+    public void sleep (){
+        System.out.println("ZzZzZzZzZzZ");
+    }
+
+    public void plays (){
+        System.out.println("*Playing*");
+    }
 }

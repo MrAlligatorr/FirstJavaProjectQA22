@@ -15,7 +15,7 @@ public class Main {
 //        op.countEvenNumbers(1,100);
 //        System.out.println("The solution for ex.1.6 = ");
 //        op.countOddNumbers(100, 1);
-//        System.out.println("The solution for ex.1.7 = " + op.sumTo100(50));
+//        System.out.println("The solution for ex.1.7 = " + op.sumTo100(1));
 //        System.out.println("The solution for ex.1.8 = " + op.averageNumberTo100(50));
 //        System.out.println("The solution for ex.1.9: ");
 //        op.stars(7);
@@ -33,7 +33,7 @@ public class Main {
 //        System.out.println("The solution for ex.2.6: ");
 //        op.countOddNumbersWhile(100,1);
 //        System.out.println("The solution for ex.2.7: ");
-//        op.averageBetween111And8899();
+        op.averageBetween111And8899();
 //        System.out.println("The solution for ex.2.8: " + op.ex8(1, 15));
 //        System.out.println("The solution for ex.2.9: ");
 //        op.fibonacci();

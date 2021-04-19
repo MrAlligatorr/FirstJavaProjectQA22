@@ -4,6 +4,7 @@ import animalRescue.Animals.Animals;
 
 public class Cats extends Animals {
     private boolean hasFur;
+
     public void purr() {
         System.out.println("PuRrRrRr");
     }
