@@ -56,40 +56,60 @@ public class Main {
 //        cal.speed(8589234.5f, 3, 24, 36);
 //        cal.speed(8589234, 3, 24, 36);
 
-        //Ex2
-//        int max= 100;
-//        int[] arrayEx1 = new int[max];
-//        op.countToMax(arrayEx1, max);
+        //Ex 2
+//        int[] array2 = new int[100];
+//        op.doBoth(array2);
 
         //Ex 3
-//        int[] array = new int[50];
-//        System.out.println(op.evenNumbers(array));
-//        op.printArray(array);
+//        int sizeArray = op.verifyIfEven(170);;
+//        int[] array3 = new int[sizeArray+2];
+//        op.printArrayEven(op.evenNumbers(array3));
 
         //Ex 4
-//        int[] array = new int[100];
+//        int number =10;
+//        int[] array = new int[number+1];
 //        System.out.println(op.average(array));
 
         //Ex 5
+//        String[] array = {"asdsad"};
+//        System.out.println(op.verifyIfFound(array));
+
+        //Ex 6
+//        System.out.println(op.verifyIfFound(222));
+
+        //Ex 7 (Aici am vrut sa se printeze emojiul ( OwO ))
 //        String[] array = new String[5];
-//        array[0] = "Cat";
-//        array[1] = "Dog";
-//        array[2] = "Lizard";
-//        array[3] = "Alligator";
-//        array[4] = "T-Rex";
-//        System.out.println(op.trueOrFalse(array, " name"));
-
-        //Ex6
-//        int[] array6 = new int[7];
-//        System.out.println(op.position(array6, 76));
-
-        //Ex 7
-//        String[] array = new String[10];
-//        op.ex7(array);
+//        array[0] = "( ";
+//        array[1] = "O";
+//        array[2] = "w";
+//        array[3] = "O";
+//        array[4] = " )";
+//        op.emote(array);
 
         //Ex 8
-//        int[]array = new int [5];
-//        op.verify(array,5);
+//        int number = 10;
+//        int[] array = new int[number + 1];
+//        op.exclusion(array, 8);
 
+        //Ex 9
+//        int number = 10;
+//        int[] array = new int[11];
+//        array[0] =531;
+//        array[1] =257;
+//        array[2] =715;
+//        array[3] =509;
+//        array[4] =366;
+//        array[5] =111;
+//        array[6] =9;
+//        array[7] =541;
+//        array[8] =516;
+//        array[9] =2;
+//        array[10] =839;
+//        System.out.println(op.checkLower(array));
+
+        //Ex 10
+//        int[] array1 = {62,5,34,42,26,78,13,69,28,79};
+//        int[] array2 = new int[array1.length];
+//       op.printArray(op.copy(array1, array2));
     }
 }

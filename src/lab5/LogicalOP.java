@@ -2,115 +2,144 @@ package lab5;
 
 public class LogicalOP {
 
-
-    public void populateArrayWithValues(int[] array, int maxValue) {
-        for (int i = 0; i < maxValue; i++) {
-            array[i] = i + 1;
-        }
-    }
-
     public void printArray(int[] array) {
         for (int i = 0; i < array.length; i++) {
             System.out.println(array[i]);
         }
     }
 
-    //Ex 2
-    public void countToMax(int[] array, int max) {
-        for (int i = 0; i < max; i++) {
-            array[i] = i + 1;
+    public void printArraySpecial(int[] array, int nr1) {
+        for (int i = 0; i < array.length; i++) {
+            if (i == nr1) {
+                continue;
+            }
             System.out.println(array[i]);
         }
     }
 
+    public void printArrayEven(int[] array) {
+        for (int i = 2; i < array.length; i++) {
+            if (i % 2 == 0) {
+                System.out.println(array[i]);
+            }
+        }
+    }
+
+    public void setArray(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            array[i] = i + 1;
+        }
+    }
+
+    public void setArrayStart0(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            array[i] = i;
+        }
+    }
+
+    public int verifyIfEven(int nr1) {
+        if (nr1 % 2 == 0) {
+            return nr1;
+        }
+        return 0;
+    }
+
+    //Ex 2
+    public void doBoth(int[] array) {
+        setArray(array);
+        printArray(array);
+    }
+
     //Ex 3
     public int[] evenNumbers(int[] array) {
-        int start = 0;
-        for (int i = 0; i < (array.length * 2 - 1); i++) {
+        setArray(array);
+        for (int i = 2; i < array.length; i++) {
             if (i % 2 == 0) {
-                array[start] = i;
-                start++;
+                array[i] = i;
             }
         }
         return array;
     }
 
-    //Ex 4
+    //    Ex 4
     public float average(int[] array) {
+        setArray(array);
         int sum = 0;
-        float md = 0;
-        for (int i = 0; i < 100; i++) {
-            array[i] = i + 1;
-            sum = sum + array[i];
+        int count = 0;
+        for (int i = 0; i < array.length - 1; i++) {
+            sum += array[i];
+            count++;
         }
-        md = sum / (float) array.length;
-        return md;
+        return sum / (float) (array.length - 1);
     }
 
     //Ex 5
-    public Boolean trueOrFalse(String[] array, String text) {
+    public boolean verifyIfFound(String[] array) {
+        String[] verify = new String[5];
+        verify[0] = "Andreica";
+        verify[1] = "Razvan";
+        verify[2] = "Liviu";
+        verify[3] = "Quality";
+        verify[4] = "Assurance";
+
         for (int i = 0; i < array.length; i++) {
-            if (array[i] == text) {
-                return true;
+            for (int count = 0; count <= 4; count++) {
+                if (array[i].equals(verify[count])) {
+                    return true;
+                }
             }
         }
         return false;
     }
 
-    //Ex6
-    public int position(int[] rtn, int nr) {
-        rtn[0] = 36;
-        rtn[1] = 23;
-        rtn[2] = 73;
-        rtn[3] = 35;
-        rtn[4] = 55;
-        rtn[5] = 76;
-        rtn[6] = 86;
-        int loop = 0;
-        for (int i = 0; i < 7; i++) {
-            if (rtn[i] == nr) {
-                loop = i;
+    //Ex 6
+    public int verifyIfFound(int nr1) {
+        int[] array = new int[246];
+        setArrayStart0(array);
+        for (int i = 0; i <= 245; i++) {
+            if (array[i] == nr1) {
+                return i;
             }
         }
-        return loop;
+        System.out.print("The number does not exist in the array = ");
+        return nr1;
     }
 
     //Ex 7
-    public void ex7(String[] array) {
-        array = new String[10];
-        array[0] = "- - - - - - - - - - ";
-        array[1] = "- - - - - - - - - - ";
-        array[2] = "- - - - - - - - - - ";
-        array[3] = "- - - - - - - - - - ";
-        array[4] = "- - - - - - - - - - ";
-        array[5] = "- - - - - - - - - - ";
-        array[6] = "- - - - - - - - - - ";
-        array[7] = "- - - - - - - - - - ";
-        array[8] = "- - - - - - - - - - ";
-        array[9] = "- - - - - - - - - - ";
-        for (int i = 0; i < 10; i++) {
-            System.out.println(array[i]);
+    public void emote(String[] array) {
+        for (int y = 1; y <= 10; y++) {
+            for (int z = 1; z <= 7; z++) {
+                for (int i = 0; i < array.length; i++) {
+                    System.out.print(array[i]);
+                }
+            }
+            System.out.println();
         }
     }
 
     //Ex 8
-    public void verify(int[] array, int nr) {
-        array[0] = 43;
-        array[1] = 98;
-        array[2] = 2;
-        array[3] = 6;
-        array[4] = 25;
-        int loop = 0;
-        for (int i = 0; i < 5; i++) {
-            if (array[i] == nr) {
-                loop = i;
+    public int[] exclusion(int[] array, int nr1) {
+        setArrayStart0(array);
+        printArraySpecial(array, nr1);
+        return array;
+    }
+
+    //Ex 9
+    public int checkLower(int[] array) {
+        int lower = array[0];
+        for (int i = 0; i < array.length; i++) {
+            if (lower > array[i]) {
+                lower = array[i];
             }
         }
-        for (int j = 0; j < 5; j++) {
-            if (j == loop) {
-                j++;
-            }
-            System.out.println(array[j]);
+        return lower;
+    }
+
+    //Ex 10
+    public int[] copy(int[] array1, int[] array2) {
+        for (int i = 0;i< array1.length;i++){
+            array2[i]=array1[i];
         }
+        return array2;
     }
 }
