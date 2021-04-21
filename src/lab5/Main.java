@@ -111,5 +111,66 @@ public class Main {
 //        int[] array1 = {62,5,34,42,26,78,13,69,28,79};
 //        int[] array2 = new int[array1.length];
 //       op.printArray(op.copy(array1, array2));
+
+        //Ex 1 Optional
+//        int[] array = new int[10];
+//        op.insert(array,5,90);
+//        System.out.println(array[5]);
+
+        //Ex 2 Optional
+//        int[] array = new int[10];
+//        array[0] = 78;
+//        array[1] = 35;
+//        array[2] = 18;
+//        array[3] = 45;
+//        array[4] = 2;
+//        array[5] = 55;
+//        array[6] = 11;
+//        array[7] = 77;
+//        array[8] = 66;
+//        array[9] = 17;
+//        op.findSmallerAndBigger(array);
+
+        //Ex 3 Optional
+//        int[] array = new int[10];
+//        array[0]=2;
+//        array[1]=11;
+//        array[2]=22;
+//        array[3]=33;
+//        array[4]=44;
+//        array[5]=55;
+//        array[6]=66;
+//        array[7]=77;
+//        array[8]=88;
+//        array[9]=99;
+//        op.printArray(op.reverse(array));
+
+        //Ex 4 Optional
+//        int[] array = new int[10];
+//        array[0]=23;
+//        array[1]=23;
+//        array[2]=44;
+//        array[3]=55;
+//        array[4]=66;
+//        array[5]=77;
+//        array[6]=77;
+//        array[7]=88;
+//        array[8]=99;
+//        array[9]=44;
+//op.duplicateInArray(array);
+
+        //Ex 6 Optional
+//        int[] array = new int[10];
+//        array[0] = 70;
+//        array[1] = 30;
+//        array[2] = 90;
+//        array[3] = 20;
+//        array[4] = 50;
+//        array[5] = 10;
+//        array[6] = 10;
+//        array[7] = 80;
+//        array[8] = 40;
+//        array[9] = 60;
+//        op.printArray(op.reorganise(array));
     }
 }

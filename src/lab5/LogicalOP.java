@@ -137,9 +137,102 @@ public class LogicalOP {
 
     //Ex 10
     public int[] copy(int[] array1, int[] array2) {
-        for (int i = 0;i< array1.length;i++){
-            array2[i]=array1[i];
+        for (int i = 0; i < array1.length; i++) {
+            array2[i] = array1[i];
         }
         return array2;
     }
+
+    //Ex 1 Optional
+    public int[] insert(int[] array, int index, int nr1) {
+        array[index] = nr1;
+        return array;
+    }
+
+    //Ex 2 Optional
+    public void findSmallerAndBigger(int[] array) {
+        int lower = array[0];
+        int bigger = array[0];
+        for (int i = 0; i < array.length; i++) {
+            if (lower > array[i]) {
+                lower = array[i];
+            }
+            if (bigger < array[i]) {
+                bigger = array[i];
+            }
+        }
+        System.out.println("The smaller number is: " + lower);
+        System.out.println("The biggest number is: " + bigger);
+    }
+
+    //Ex 3 Optional
+    public int[] reverse(int[] array) {
+        int x = 0;
+        int[] arrayCopy = new int[array.length];
+        for (int i = 0; i < array.length; i++) {
+            arrayCopy[i] = array[i];
+        }
+        for (int y = arrayCopy.length - 1; y >= 0; y--) {
+            array[x] = arrayCopy[y];
+            x++;
+        }
+        return array;
+    }
+
+    //Ex 6 Optional
+//    public int[] reorganise(int[] array) {
+//        int[] fillArray = new int[array.length];
+//        int a =1;
+//        int lower = array[0];
+//        for (int index = 0; index < array.length; index++) {
+//            for (int checkSmall = 0; checkSmall < array.length; checkSmall++) {
+//                if (lower > array[checkSmall]) {
+//                    lower = array[checkSmall];
+//                }
+//            }
+//            fillArray[index] = lower;
+//            for (int count = 0; count < fillArray.length; count++) {
+//                for (int secondCount=1; secondCount< fillArray.length;secondCount++){
+//                if (fillArray[count] == fillArray[secondCount]){
+//                        continue;
+//                    }
+//                }
+//            }
+//        }
+//        return fillArray;
+//    }
+            //Ex 4 Optional
+//    public void duplicateInArray (int[] array){
+//        int nr1=0;
+//        int nr2=0;
+//        for (int i = 0; i< array.length; i++){
+//            nr1 = array[i];
+//            for (int y = 1; y< array.length; y++){
+//                nr2 = array[y];
+//                if (nr1==nr2){
+//                    System.out.print("The duplicate number is: "+ nr1);
+//                    System.out.println(" and the index of the duplicate number is: "+ i);
+//                    System.out.print("The duplicate number is: "+ nr2);
+//                    System.out.println(" and the index of the duplicate number is: "+ y);
+//                }
+//            }
+//        }
+//    }
+
+            //Ex 5 Optional
+//    public void duplicates (int[]array){
+//        int[] arrayCopy = new int[array.length];
+//        for (int a = 0; a < array.length; a++) {
+//            arrayCopy[a] = array[a];
+//
+//        for (int i = 0; i<array.length; i++) {
+//            for (int y = 1; y< arrayCopy.length;y++) {
+//                if (array[i] == array[y]){
+//                    System.out.print("The duplicate number is: "+ array[i]);
+//                    System.out.println(" and the index of the duplicate number is: "+ i);
+//                    y--;
+//                }
+//            }
+//        }
+//    }
 }
