@@ -179,60 +179,50 @@ public class LogicalOP {
         return array;
     }
 
-    //Ex 6 Optional
-//    public int[] reorganise(int[] array) {
-//        int[] fillArray = new int[array.length];
-//        int a =1;
-//        int lower = array[0];
-//        for (int index = 0; index < array.length; index++) {
-//            for (int checkSmall = 0; checkSmall < array.length; checkSmall++) {
-//                if (lower > array[checkSmall]) {
-//                    lower = array[checkSmall];
-//                }
-//            }
-//            fillArray[index] = lower;
-//            for (int count = 0; count < fillArray.length; count++) {
-//                for (int secondCount=1; secondCount< fillArray.length;secondCount++){
-//                if (fillArray[count] == fillArray[secondCount]){
-//                        continue;
-//                    }
-//                }
-//            }
-//        }
-//        return fillArray;
-//    }
-            //Ex 4 Optional
-//    public void duplicateInArray (int[] array){
-//        int nr1=0;
-//        int nr2=0;
-//        for (int i = 0; i< array.length; i++){
-//            nr1 = array[i];
-//            for (int y = 1; y< array.length; y++){
-//                nr2 = array[y];
-//                if (nr1==nr2){
-//                    System.out.print("The duplicate number is: "+ nr1);
-//                    System.out.println(" and the index of the duplicate number is: "+ i);
-//                    System.out.print("The duplicate number is: "+ nr2);
-//                    System.out.println(" and the index of the duplicate number is: "+ y);
-//                }
-//            }
-//        }
-//    }
+    //Ex 4 Optional
+    public void duplicatesInArray(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            for (int y = i + 1; y < array.length; y++) {
+                if (array[i] == array[y]) {
+                    if (array[y] == array[i]) {
+                        System.out.print("The number is: " + array[y]);
+                        System.out.println(" and the index of the number is: " + y);
+                    }
+                    System.out.print("The number is: " + array[i]);
+                    System.out.println(" and the index of the number is: " + i);
+                }
+            }
+        }
+    }
 
-            //Ex 5 Optional
-//    public void duplicates (int[]array){
-//        int[] arrayCopy = new int[array.length];
-//        for (int a = 0; a < array.length; a++) {
-//            arrayCopy[a] = array[a];
-//
-//        for (int i = 0; i<array.length; i++) {
-//            for (int y = 1; y< arrayCopy.length;y++) {
-//                if (array[i] == array[y]){
-//                    System.out.print("The duplicate number is: "+ array[i]);
-//                    System.out.println(" and the index of the duplicate number is: "+ i);
-//                    y--;
-//                }
-//            }
-//        }
-//    }
+    //Ex 5 Optional
+    public void common(String[] arrayA, String[] arrayB) {
+        for (int i = 0; i < arrayA.length; i++) {
+            for (int y = 0; y < arrayB.length; y++) {
+                if (arrayB[y].equals(arrayA[i])) {
+                    if (arrayA[i].equals(arrayB[y])) {
+                        System.out.print("The text is double: " + arrayA[i]);
+                        System.out.println(" and the index of the text is: " + i);
+                    }
+                    System.out.print("The text is double: " + arrayB[y]);
+                    System.out.println(" and the index of the text is: " + y);
+                }
+            }
+        }
+    }
+
+
+    //Ex 6 Optional
+    public int[] reorganise(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            for (int y = i + 1; y < array.length; y++) {
+                if (array[i] > array[y]) {
+                    int nr1 = array[i];
+                    array[i] = array[y];
+                    array[y] = nr1;
+                }
+            }
+        }
+        return array;
+    }
 }

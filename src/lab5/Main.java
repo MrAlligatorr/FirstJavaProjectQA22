@@ -147,17 +147,50 @@ public class Main {
 
         //Ex 4 Optional
 //        int[] array = new int[10];
-//        array[0]=23;
-//        array[1]=23;
-//        array[2]=44;
-//        array[3]=55;
-//        array[4]=66;
-//        array[5]=77;
-//        array[6]=77;
-//        array[7]=88;
-//        array[8]=99;
-//        array[9]=44;
-//op.duplicateInArray(array);
+//        array[0] = 23;
+//        array[1] = 23;
+//        array[2] = 44;
+//        array[3] = 55;
+//        array[4] = 66;
+//        array[5] = 77;
+//        array[6] = 77;
+//        array[7] = 88;
+//        array[8] = 99;
+//        array[9] = 44;
+//        op.duplicatesInArray(array);
+
+        //Ex 5 Optional
+//        String[] arrayA = new String[10];
+//        arrayA[0] = "Arachne";
+//        arrayA[1] = "Arethusa";
+//        arrayA[2] = "Laokoon";
+//        arrayA[3] = "Theano";
+//        arrayA[4] = "Poseidon";
+//        arrayA[5] = "Jocasta";
+//        arrayA[6] = "Pan";
+//        arrayA[7] = "Euphrosyne";
+//        arrayA[8] = "Phoebus";
+//        arrayA[9] = "Lyssa";
+//
+//        String[] arrayB = new String[15];
+//        arrayB[0] ="Arachne";
+//        arrayB[1] ="Aoede";
+//        arrayB[2] ="Apollo";
+//        arrayB[3] ="Ianthe";
+//        arrayB[4] ="Phoebus";
+//        arrayB[5] ="Aineias";
+//        arrayB[6] ="Perseus";
+//        arrayB[7] ="Sparklesprig";
+//        arrayB[8] ="Lykourgos";
+//        arrayB[9] ="Poseidon";
+//        arrayB[10] ="Hippolyta";
+//        arrayB[11] ="Hemera";
+//        arrayB[12] ="Demophon";
+//        arrayB[13] ="Antigone";
+//        arrayB[14] ="Atalanta";
+//
+//        op.common(arrayA,arrayB);
+
 
         //Ex 6 Optional
 //        int[] array = new int[10];
@@ -167,10 +200,12 @@ public class Main {
 //        array[3] = 20;
 //        array[4] = 50;
 //        array[5] = 10;
-//        array[6] = 10;
+//        array[6] = 100;
 //        array[7] = 80;
 //        array[8] = 40;
 //        array[9] = 60;
 //        op.printArray(op.reorganise(array));
     }
+
+
 }
