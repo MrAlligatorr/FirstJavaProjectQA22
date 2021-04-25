@@ -1,6 +1,6 @@
 package animalRescue.Food;
 
-public class Food {
+public abstract class Food {
 
     private String name;
     private float priceIn$;
@@ -49,7 +49,5 @@ public class Food {
         this.inStock = inStock;
     }
 
-    public void smell(){
-        System.out.println("Smells fresh");
-    }
+    public abstract void smell();
 }

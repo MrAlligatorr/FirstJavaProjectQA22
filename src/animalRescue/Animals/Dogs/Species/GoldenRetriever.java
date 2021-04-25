@@ -10,4 +10,8 @@ public class GoldenRetriever extends Dogs {
     public void plays(){
         System.out.println("*Sleeps*");
     }
+
+    public void barks(){
+        System.out.println("Ham Ham");
+    }
 }

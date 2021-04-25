@@ -8,7 +8,8 @@ public class InsideActivities extends FunActivities {
         System.out.println("ZzZzZz...");
     }
 
-    public void weather(){
+    @Override
+    public void weather() {
         System.out.println("Rainy");
     }
 }

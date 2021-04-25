@@ -2,12 +2,10 @@ package animalRescue.Animals.Cats;
 
 import animalRescue.Animals.Animals;
 
-public class Cats extends Animals {
+public abstract class Cats extends Animals {
     private boolean hasFur;
 
-    public void purr() {
-        System.out.println("PuRrRrRr");
-    }
+    public abstract void purr();
 
     public boolean isHasFur() {
         return hasFur;

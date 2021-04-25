@@ -1,6 +1,6 @@
 package animalRescue.Staff;
 
-public class Staff {
+public abstract class Staff {
     private int age;
     private String name;
     private boolean isMale;
@@ -47,8 +47,6 @@ public class Staff {
         this.daysOff = daysOff;
     }
 
-    public void coffee (){
-        System.out.println("Doesn't like coffee");
-    }
+    public abstract void coffee ();
 }
 

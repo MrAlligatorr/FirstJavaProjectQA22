@@ -1,6 +1,6 @@
 package animalRescue.Animals;
 
-public class Animals {
+public abstract class Animals {
 
     private String name;
     private int age;
@@ -76,11 +76,7 @@ public class Animals {
         this.favoriteFunActivity = favoriteFunActivity;
     }
 
-    public void sleep (){
-        System.out.println("ZzZzZzZzZzZ");
-    }
+    public abstract void sleep ();
 
-    public void plays (){
-        System.out.println("*Playing*");
-    }
+    public abstract void plays ();
 }

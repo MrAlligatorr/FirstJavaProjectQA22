@@ -14,7 +14,8 @@ public class Doctors extends Staff {
         this.specialization = specialization;
     }
 
-    public void coffee(){
+    @Override
+    public void coffee() {
         System.out.println("Can't live without coffee");
     }
 }
