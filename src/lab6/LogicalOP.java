@@ -123,7 +123,22 @@ public class LogicalOP {
         return evenList;
     }
 
+
     //Ex 3 Optional
+    public List<Integer> order(List<Integer> list) {
+        for (int i = 0; i< list.size(); i++){
+            for (int y =i+ 1; y<list.size(); y++){
+                if (list.get(i)>list.get(y)){
+                    int memo = list.get(i);
+                    list.set(i, list.get(y));
+                    list.set(y, memo);
+                }
+            }
+        }
+        return list;
+    }
+
+    //Ex 3 Optional (Wrong ones)
 //    public List<Integer> order(List<Integer> list) {
 //        List<Integer> orderList = new ArrayList<>();
 //        int size = list.size();
@@ -181,24 +196,25 @@ public class LogicalOP {
 //        return big;
 //    }
 
-    public List<Integer> order2(List<Integer> list) {
-        List<Integer> orderedList = new ArrayList<>();
-        for (int i = 0; i < list.size(); i++) {
-            int smallStart = list.get(0);
-            int countStart = 0;
-            int small = smallStart;
-            int count = countStart;
-            for (int y = 1; y < list.size(); y++) {
-                if (small > list.get(y)) {
-                    small = list.get(y);
-                    count = i;
-                }
-            }
-            list.remove(count);
-            orderedList.add(small);
-        }
-        return orderedList;
-    }
+//    public List<Integer> order2(List<Integer> list) {
+//        List<Integer> orderedList = new ArrayList<>();
+//        int smallStart = list.get(0);
+//        int small = smallStart;
+//        for (int i = 0; i < list.size(); i++) {
+//            int countStart = 0;
+//            int count = countStart;
+//            for (int y = 1; y < list.size(); y++) {
+//                if (small > list.get(y)) {
+//                    small = list.get(y);
+//                    count = i;
+//                }
+//                count++;
+//            }
+//            list.remove(count);
+//            orderedList.add(small);
+//        }
+//        return orderedList;
+//    }
 
 //    public List<Integer> order2(List<Integer> list) {
 //        List<Integer> orderedList = new ArrayList<>();
@@ -216,4 +232,5 @@ public class LogicalOP {
 //        }
 //        return orderedList;
 //    }
+
 }

@@ -132,6 +132,6 @@ public class Main {
         list.add(4);
         list.add(33);
         list.add(19);
-        System.out.println(op.order2(list));
+        System.out.println(op.order(list));
     }
 }
