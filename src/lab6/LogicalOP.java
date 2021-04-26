@@ -109,6 +109,19 @@ public class LogicalOP {
         return list;
     }
 
+    //SAU
+    public List<String> orderByIndex(List<String> list, int index1, int index2) {
+        int smaller = op.checkSmallerNumber(index1, index2);
+        int bigger = op1.checkBiggerNumber(index1, index2);
+
+        list.add(smaller + 1, list.get(smaller));
+        list.set(smaller, list.get(bigger + 1));
+        list.set(bigger + 1, list.get(smaller + 1));
+        list.remove(smaller + 1);
+        return list;
+    }
+
+
     //Ex 2 Optional
     public List<Integer> evenNumbers(List<Integer> list) {
         List<Integer> evenList = new ArrayList<>();
@@ -126,9 +139,9 @@ public class LogicalOP {
 
     //Ex 3 Optional
     public List<Integer> order(List<Integer> list) {
-        for (int i = 0; i< list.size(); i++){
-            for (int y =i+ 1; y<list.size(); y++){
-                if (list.get(i)>list.get(y)){
+        for (int i = 0; i < list.size(); i++) {
+            for (int y = i + 1; y < list.size(); y++) {
+                if (list.get(i) > list.get(y)) {
                     int memo = list.get(i);
                     list.set(i, list.get(y));
                     list.set(y, memo);
@@ -232,5 +245,4 @@ public class LogicalOP {
 //        }
 //        return orderedList;
 //    }
-
 }

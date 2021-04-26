@@ -117,21 +117,31 @@ public class Main {
 //
 //        System.out.println(op.switchNumbers(list, 37, 4));
 
+        //SAU
+//        List<String> list = new ArrayList<>();
+//        list.add("Andreica");
+//        list.add("Razvan");
+//        list.add("Liviu");
+//        list.add("este");
+//        list.add("numele");
+//        list.add("meu");
+//        System.out.println(op.orderByIndex(list, 3, 0));
+
         //Ex 2 Optional
 //        System.out.println(op.evenNumbers(op.setListToNumber(-20,20)));
 
         //Ex 3 Optional
-        List<Integer> list = new ArrayList<>();
-        list.add(37);
-        list.add(39);
-        list.add(42);
-        list.add(26);
-        list.add(14);
-        list.add(34);
-        list.add(17);
-        list.add(4);
-        list.add(33);
-        list.add(19);
-        System.out.println(op.order(list));
+//        List<Integer> list = new ArrayList<>();
+//        list.add(37);
+//        list.add(39);
+//        list.add(42);
+//        list.add(26);
+//        list.add(14);
+//        list.add(34);
+//        list.add(17);
+//        list.add(4);
+//        list.add(33);
+//        list.add(19);
+//        System.out.println(op.order(list));
     }
 }
