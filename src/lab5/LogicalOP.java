@@ -31,6 +31,14 @@ public class LogicalOP {
         }
     }
 
+    public void setArray(int[] array, int nr1, int nr2) {
+        int nr=nr1;
+        for (int i = 0; i < array.length; i++) {
+            array[i] = nr;
+            nr++;
+        }
+    }
+
     public void setArrayStart0(int[] array) {
         for (int i = 0; i < array.length; i++) {
             array[i] = i;
@@ -50,6 +58,12 @@ public class LogicalOP {
         printArray(array);
     }
 
+    public void doBoth(int[] array, int nr1, int nr2) {
+        setArray(array, nr1, nr2);
+        printArray(array);
+    }
+
+
     //Ex 3
     public int[] evenNumbers(int[] array) {
         setArray(array);
@@ -65,10 +79,8 @@ public class LogicalOP {
     public float average(int[] array) {
         setArray(array);
         int sum = 0;
-        int count = 0;
         for (int i = 0; i < array.length - 1; i++) {
             sum += array[i];
-            count++;
         }
         return sum / (float) (array.length - 1);
     }

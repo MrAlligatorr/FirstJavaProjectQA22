@@ -155,10 +155,10 @@ public class Calculator {
     }
 
     public void speed(int meters, int hours, int minutes, int seconds) {
-        float time = seconds + minutes * 60 + hours * 60 * 60;
+        float time = seconds + minutes * 60 + hours * 3600;
         float metersPerSeconds = meters / time;
-        float kilometersPerHours = (meters / 1000) / (time / 3600);
-        float mphPerHours = (meters / 1609) / (time / 3600);
+        float kilometersPerHours = (meters / 1000f) / (time / 3600);
+        float mphPerHours = (meters / 1609f) / (time / 3600);
         System.out.println("The solution for ex.1.9: ");
         System.out.println("Speed (m/s) = " + metersPerSeconds);
         System.out.println("Speed (km/h) = " + kilometersPerHours);
