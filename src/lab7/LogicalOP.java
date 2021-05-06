@@ -1,5 +1,9 @@
 package lab7;
 
+import java.util.ArrayList;
+import java.util.InputMismatchException;
+import java.util.List;
+
 public class LogicalOP {
     Read gN = new Read();
 
@@ -42,12 +46,10 @@ public class LogicalOP {
     }
 
     //Ex 4
-    public int[] setArray() {
-        int[] array = new int[gN.getIndex()];
-        for (int i = 0; i < array.length; i++) {
-            array[i] = gN.getValueFromIndex(i);
-        }
-        return array;
+    public List<Integer> setList() {
+        List <Integer> list = new ArrayList<>();
+        gN.setList(list);
+        return list;
     }
 
     //Ex 5

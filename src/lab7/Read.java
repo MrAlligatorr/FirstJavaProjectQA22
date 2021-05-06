@@ -1,6 +1,7 @@
 package lab7;
 
 import java.util.InputMismatchException;
+import java.util.List;
 import java.util.Scanner;
 
 public class Read {
@@ -91,6 +92,25 @@ public class Read {
             }
         } while (repeat);
         return number;
+    }
+
+    //Ex 4
+    public List<Integer> setList(List<Integer> list) {
+        boolean repeat;
+        int index = 0;
+        do {
+            System.out.print("On the index " + index + " add a number: ");
+            try {
+                Scanner getNumber = new Scanner(System.in);
+                list.add(index, getNumber.nextInt());
+                index += 1;
+                repeat = true;
+            } catch (InputMismatchException a) {
+                repeat = false;
+                System.out.println("Invalid value! Not a number!");
+            }
+        } while (repeat);
+        return list;
     }
 
     //Ex 5

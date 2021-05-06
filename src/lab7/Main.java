@@ -20,16 +20,16 @@ public class Main {
 
 
         //Ex 4
-//        op.printArray(op.setArray());
+        System.out.println((op.setList()));
 
 
         //Ex 5
-        int[] array = new int[5];
-        array[0] = 15;
-        array[1] = 4;
-        array[2] = 21;
-        array[3] = 18;
-        array[4] = 9;
+//        int[] array = new int[5];
+//        array[0] = 15;
+//        array[1] = 4;
+//        array[2] = 21;
+//        array[3] = 18;
+//        array[4] = 9;
 
 //        op.checkNumberFromIndex(array);
         //Sau
